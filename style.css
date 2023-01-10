@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+span{
+    font-weight: 300;
+    color: var(--Gray);
+}
+h1{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+p{
+    color: var(--Very-Dark-Blue);
+}
+.first-part{
+    width: auto;
+}
+.second-part{
+    width: 100%;
+    
+}
+
+#form-field{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+input,button{
+    padding: 1rem 2.5rem;
+    border: solid 1px var(--Pale-Blue);
+    color: var(--Very-Dark-Blue);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    outline: none;
+}
+button{
+    background-color: var(--Blue);
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+button:hover, button:focus{
+    opacity: .8;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    margin-top: 3rem;
+}
+.last-part{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.social-media-icons{
+    display: flex;
+    gap: .9rem;
+    align-items: center;
+}
+.icon{
+    color: var(--Blue);
+    border: 1px solid var(--Pale-Blue);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.icon:hover, .icon:focus{
+    background-color: var(--Blue);
+    color: #fff;
+}
+.copyright{
+    color: var(--Gray);
+}
+.emailValidation{
+    border: var(--Light-Red);
+}
+b{
+    margin-left: 2.4rem; 
+    color: var(--Light-Red);
+    display: none;
+
+}
+.icon:hover, .icon:focus,
+input:hover, input:focus{
+    cursor: pointer;
+}
+@media(min-width:415px){
+    #form-field{
+        position: relative;
+    }
+    b{
+        position: absolute;
+        bottom: -1.6rem;
+        left: .5rem;
+        font-weight: 300;
+    }
+    main{
+        width: 50%;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+    .second-part{
+        width: 88%;
+    }
+   
+    #form-field{
+        display: grid;
+        grid-template-columns: 2fr .8fr;
+    }
+    img{
+        width: 80%;
+    }
+    .last-part{
+        margin-top: 0;
+    }
+}
+
+
