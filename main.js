@@ -4,8 +4,9 @@ let myForm = document.getElementById('form-field');
     let errorMsg = document.getElementById('errormgs');
     btn.addEventListener('click',ValidateEmail);
 
-    function ValidateEmail() 
+    function ValidateEmail(e) 
     {
+        e.preventDeafult();
       if(input.value == ''){
         input.style.border = 'hsl(354, 100%, 66%) solid 1px';
         errorMsg.style.display = 'block';
